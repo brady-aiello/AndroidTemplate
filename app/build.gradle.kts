@@ -75,10 +75,13 @@ dependencies {
     implementation(KotlinX.coroutines.core)
     // Serialization
     implementation(KotlinX.serialization.json)
+
     // Network
-    implementation(Ktor.client.okHttp)
-    implementation(Ktor.client.serialization)
-    implementation(Ktor.client.logging)
+    implementation("io.ktor:ktor-client-core:2.0.3")
+    implementation("io.ktor:ktor-client-cio:2.0.3")
+    implementation("io.ktor:ktor-client-logging:2.0.3")
+    implementation("io.ktor:ktor-client-content-negotiation:2.0.3")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.3")
 
     // Cache
     // implementation(Square.sqlDelight.drivers.android)
